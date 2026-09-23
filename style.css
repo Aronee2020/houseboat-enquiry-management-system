@@ -30,6 +30,8 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: #1f5f3b;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .brand p {
