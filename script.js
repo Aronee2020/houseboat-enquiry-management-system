@@ -136,14 +136,6 @@ function saveEnquiry() {
         packageName:
             document.getElementById("packageName").value,
 
-        adults:
-            document.getElementById("adults").value,
-
-        children:
-            document.getElementById("children").value,
-
-        kids:
-            document.getElementById("kids").value,
 
         totalPax:
             document.getElementById("totalPax").value,
@@ -250,15 +242,6 @@ function updateEnquiry() {
 
         packageName:
             document.getElementById("packageName").value,
-
-        adults:
-            document.getElementById("adults").value,
-
-        children:
-            document.getElementById("children").value,
-
-        kids:
-            document.getElementById("kids").value,
 
         totalPax:
             document.getElementById("totalPax").value,
@@ -381,15 +364,6 @@ function editEnquiry(id) {
 
     document.getElementById("packageName").value =
         enquiry.packageName || "";
-
-    document.getElementById("adults").value =
-        enquiry.adults || "";
-
-    document.getElementById("children").value =
-        enquiry.children || "";
-
-    document.getElementById("kids").value =
-        enquiry.kids || "";
 
     document.getElementById("totalPax").value =
         enquiry.totalPax || "";
