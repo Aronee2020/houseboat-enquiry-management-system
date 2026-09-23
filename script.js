@@ -479,9 +479,7 @@ function displayEnquiries(searchText = "") {
 
             <td>${formatDate(enquiry.cruiseDate)}</td>
 
-            <td>${enquiry.adults || ""}</td>
-
-            <td>${enquiry.children || ""}</td>
+           <td>${enquiry.totalPax || ""}</td>
 
             <td>${enquiry.packageName || ""}</td>
 
@@ -573,7 +571,7 @@ function formatDate(dateString) {
 
 
 /* =========================================================
-   FORMAT AMOUNT
+   FORMAT PACKAGE TARIFF
 ========================================================= */
 
 function formatAmount(amount) {
@@ -582,9 +580,7 @@ function formatAmount(amount) {
         return "";
     }
 
-
-    return "₹ " +
-        Number(amount).toLocaleString("en-IN");
+    return amount;
 
 }
 
